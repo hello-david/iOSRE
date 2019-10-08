@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+def hawkeye
+  pod 'MTHawkeye/DefaultPlugins', :configurations => ['Debug']
+  pod 'FLEX', :configurations => ['Debug']
+  pod 'FBRetainCycleDetector', :configurations => ['Debug']
+  pod 'fishhook', :configurations => ['Debug']
+  pod 'CocoaLumberjack', :configurations => ['Debug']
+  pod 'MTGLDebug', :configurations => ['Debug']
+  pod 'MTAppenderFile', '~> 0.4.0', :configurations => ['Debug'], :inhibit_warnings => false
+end
+
+target 'General' do
+  use_frameworks!
+end
+
+target 'GeneralDylib' do
+  use_frameworks!
+  hawkeye
+end

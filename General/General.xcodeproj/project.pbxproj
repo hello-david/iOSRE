@@ -1,0 +1,886 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10AB97F18F98474A73786078 /* Pods_GeneralDylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F10237DE98BD7029F95E811 /* Pods_GeneralDylib.framework */; };
+		5C0A55E9D39EB39263772DC4 /* Pods_General.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB28667B8CC096D9C9DF3C7 /* Pods_General.framework */; };
+		95F9FBE022CF401D0003FA0A /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95F9FBDF22CF401D0003FA0A /* MDConfig.plist */; };
+		95F9FBEA22CF401D0003FA0A /* libGeneralDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 95F9FBE922CF401D0003FA0A /* libGeneralDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		95F9FBEF22CF401D0003FA0A /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F9FBEE22CF401D0003FA0A /* JavaScriptCore.framework */; };
+		95F9FBF122CF401D0003FA0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F9FBF022CF401D0003FA0A /* Foundation.framework */; };
+		95F9FBF322CF401D0003FA0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F9FBF222CF401D0003FA0A /* UIKit.framework */; };
+		95F9FBF822CF401D0003FA0A /* GeneralDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FBF722CF401D0003FA0A /* GeneralDylib.mm */; };
+		95F9FBFB22CF401D0003FA0A /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F9FBFA22CF401D0003FA0A /* MDConfigManager.h */; };
+		95F9FBFD22CF401D0003FA0A /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FBFC22CF401D0003FA0A /* MDConfigManager.m */; };
+		95F9FBFF22CF401D0003FA0A /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F9FBFE22CF401D0003FA0A /* MDCycriptManager.h */; };
+		95F9FC0122CF401D0003FA0A /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FC0022CF401D0003FA0A /* MDCycriptManager.m */; };
+		95F9FC0322CF401D0003FA0A /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F9FC0222CF401D0003FA0A /* MDMethodTrace.h */; };
+		95F9FC0522CF401D0003FA0A /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FC0422CF401D0003FA0A /* MDMethodTrace.m */; };
+		95F9FC0822CF401D0003FA0A /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FC0722CF401D0003FA0A /* a1a2-selectortramps-arm.s */; };
+		95F9FC0A22CF401D0003FA0A /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FC0922CF401D0003FA0A /* a1a2-selectortramps-arm64.s */; };
+		95F9FC0C22CF401D0003FA0A /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FC0B22CF401D0003FA0A /* a1a2-selectortramps-i386.s */; };
+		95F9FC0E22CF401D0003FA0A /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FC0D22CF401D0003FA0A /* a1a2-selectortramps-x86_64.s */; };
+		95F9FC1022CF401D0003FA0A /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FC0F22CF401D0003FA0A /* a2a3-selectortramps-arm.s */; };
+		95F9FC1222CF401D0003FA0A /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FC1122CF401D0003FA0A /* a2a3-selectortramps-i386.s */; };
+		95F9FC1422CF401D0003FA0A /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FC1322CF401D0003FA0A /* a2a3-selectortramps-x86_64.s */; };
+		95F9FC1622CF401D0003FA0A /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F9FC1522CF401D0003FA0A /* OCMethodTrace.h */; };
+		95F9FC1822CF401D0003FA0A /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FC1722CF401D0003FA0A /* OCMethodTrace.m */; };
+		95F9FC1A22CF401D0003FA0A /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F9FC1922CF401D0003FA0A /* OCSelectorTrampolines.h */; };
+		95F9FC1C22CF401D0003FA0A /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FC1B22CF401D0003FA0A /* OCSelectorTrampolines.mm */; };
+		95F9FC2022CF401D0003FA0A /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F9FC1F22CF401D0003FA0A /* LLDBTools.h */; };
+		95F9FC2222CF401D0003FA0A /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FC2122CF401D0003FA0A /* LLDBTools.mm */; };
+		95F9FC2722CF401D0003FA0A /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FC2622CF401D0003FA0A /* AntiAntiDebug.m */; };
+		95F9FC2A22CF401E0003FA0A /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FC2922CF401E0003FA0A /* fishhook.c */; };
+		95F9FC2C22CF401E0003FA0A /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F9FC2B22CF401E0003FA0A /* fishhook.h */; };
+		95F9FC2E22CF401E0003FA0A /* GeneralDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F9FC2D22CF401E0003FA0A /* GeneralDylib.h */; };
+		95F9FC3022CF401E0003FA0A /* GeneralDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FC2F22CF401E0003FA0A /* GeneralDylib.m */; };
+		95F9FC3B22CF40E60003FA0A /* MertricManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F9FC3922CF40E60003FA0A /* MertricManager.h */; };
+		95F9FC3C22CF40E60003FA0A /* MertricManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F9FC3A22CF40E60003FA0A /* MertricManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95F9FBEB22CF401D0003FA0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95F9FBCD22CF401D0003FA0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95F9FBE822CF401D0003FA0A;
+			remoteInfo = GeneralDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95F9FBD522CF401D0003FA0A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				95F9FBEA22CF401D0003FA0A /* libGeneralDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1FB28667B8CC096D9C9DF3C7 /* Pods_General.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_General.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F10237DE98BD7029F95E811 /* Pods_GeneralDylib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeneralDylib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		562C4723D867970736DAC302 /* Pods-GeneralDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeneralDylib.debug.xcconfig"; path = "Target Support Files/Pods-GeneralDylib/Pods-GeneralDylib.debug.xcconfig"; sourceTree = "<group>"; };
+		6B5DE4025B4EAF8A36D384A2 /* Pods-GeneralDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeneralDylib.release.xcconfig"; path = "Target Support Files/Pods-GeneralDylib/Pods-GeneralDylib.release.xcconfig"; sourceTree = "<group>"; };
+		79C30B62FEB656DBEBB231A2 /* Pods-General.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-General.release.xcconfig"; path = "Target Support Files/Pods-General/Pods-General.release.xcconfig"; sourceTree = "<group>"; };
+		95F9FBD822CF401D0003FA0A /* General.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = General.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95F9FBDB22CF401D0003FA0A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		95F9FBDD22CF401D0003FA0A /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		95F9FBDF22CF401D0003FA0A /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		95F9FBE222CF401D0003FA0A /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		95F9FBE322CF401D0003FA0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95F9FBE922CF401D0003FA0A /* libGeneralDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libGeneralDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		95F9FBEE22CF401D0003FA0A /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		95F9FBF022CF401D0003FA0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		95F9FBF222CF401D0003FA0A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		95F9FBF622CF401D0003FA0A /* GeneralDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = GeneralDylib.xm; path = Logos/GeneralDylib.xm; sourceTree = "<group>"; };
+		95F9FBF722CF401D0003FA0A /* GeneralDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = GeneralDylib.mm; path = Logos/GeneralDylib.mm; sourceTree = "<group>"; };
+		95F9FBFA22CF401D0003FA0A /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		95F9FBFC22CF401D0003FA0A /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		95F9FBFE22CF401D0003FA0A /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		95F9FC0022CF401D0003FA0A /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		95F9FC0222CF401D0003FA0A /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		95F9FC0422CF401D0003FA0A /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		95F9FC0722CF401D0003FA0A /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm.s"; path = "Trace/a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		95F9FC0922CF401D0003FA0A /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm64.s"; path = "Trace/a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		95F9FC0B22CF401D0003FA0A /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-i386.s"; path = "Trace/a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		95F9FC0D22CF401D0003FA0A /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-x86_64.s"; path = "Trace/a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		95F9FC0F22CF401D0003FA0A /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-arm.s"; path = "Trace/a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		95F9FC1122CF401D0003FA0A /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-i386.s"; path = "Trace/a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		95F9FC1322CF401D0003FA0A /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-x86_64.s"; path = "Trace/a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		95F9FC1522CF401D0003FA0A /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMethodTrace.h; path = Trace/OCMethodTrace.h; sourceTree = "<group>"; };
+		95F9FC1722CF401D0003FA0A /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCMethodTrace.m; path = Trace/OCMethodTrace.m; sourceTree = "<group>"; };
+		95F9FC1922CF401D0003FA0A /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCSelectorTrampolines.h; path = Trace/OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		95F9FC1B22CF401D0003FA0A /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OCSelectorTrampolines.mm; path = Trace/OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		95F9FC1D22CF401D0003FA0A /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; name = selectortramps.mac; path = Trace/selectortramps.mac; sourceTree = "<group>"; };
+		95F9FC1F22CF401D0003FA0A /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		95F9FC2122CF401D0003FA0A /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		95F9FC2422CF401D0003FA0A /* GeneralDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeneralDylib-Prefix.pch"; sourceTree = "<group>"; };
+		95F9FC2622CF401D0003FA0A /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		95F9FC2922CF401E0003FA0A /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		95F9FC2B22CF401E0003FA0A /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		95F9FC2D22CF401E0003FA0A /* GeneralDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralDylib.h; sourceTree = "<group>"; };
+		95F9FC2F22CF401E0003FA0A /* GeneralDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralDylib.m; sourceTree = "<group>"; };
+		95F9FC3922CF40E60003FA0A /* MertricManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MertricManager.h; sourceTree = "<group>"; };
+		95F9FC3A22CF40E60003FA0A /* MertricManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MertricManager.m; sourceTree = "<group>"; };
+		C6EE0089543C8AA583DAB163 /* Pods-General.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-General.debug.xcconfig"; path = "Target Support Files/Pods-General/Pods-General.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95F9FBD222CF401D0003FA0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0A55E9D39EB39263772DC4 /* Pods_General.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95F9FBE622CF401D0003FA0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F9FBEF22CF401D0003FA0A /* JavaScriptCore.framework in Frameworks */,
+				95F9FBF322CF401D0003FA0A /* UIKit.framework in Frameworks */,
+				95F9FBF122CF401D0003FA0A /* Foundation.framework in Frameworks */,
+				10AB97F18F98474A73786078 /* Pods_GeneralDylib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DB2F188A97A63363BD1DC81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6EE0089543C8AA583DAB163 /* Pods-General.debug.xcconfig */,
+				79C30B62FEB656DBEBB231A2 /* Pods-General.release.xcconfig */,
+				562C4723D867970736DAC302 /* Pods-GeneralDylib.debug.xcconfig */,
+				6B5DE4025B4EAF8A36D384A2 /* Pods-GeneralDylib.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		95F9FBCC22CF401D0003FA0A = {
+			isa = PBXGroup;
+			children = (
+				95F9FBDA22CF401D0003FA0A /* General */,
+				95F9FBF422CF401D0003FA0A /* GeneralDylib */,
+				95F9FBED22CF401D0003FA0A /* Frameworks */,
+				95F9FBD922CF401D0003FA0A /* Products */,
+				6DB2F188A97A63363BD1DC81 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		95F9FBD922CF401D0003FA0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95F9FBD822CF401D0003FA0A /* General.app */,
+				95F9FBE922CF401D0003FA0A /* libGeneralDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95F9FBDA22CF401D0003FA0A /* General */ = {
+			isa = PBXGroup;
+			children = (
+				95F9FBDB22CF401D0003FA0A /* icon.png */,
+				95F9FBE322CF401D0003FA0A /* Info.plist */,
+				95F9FBDC22CF401D0003FA0A /* Scripts */,
+				95F9FBDE22CF401D0003FA0A /* Config */,
+				95F9FBE122CF401D0003FA0A /* TargetApp */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		95F9FBDC22CF401D0003FA0A /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				95F9FBDD22CF401D0003FA0A /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		95F9FBDE22CF401D0003FA0A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				95F9FBDF22CF401D0003FA0A /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		95F9FBE122CF401D0003FA0A /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				95F9FBE222CF401D0003FA0A /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		95F9FBED22CF401D0003FA0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95F9FBEE22CF401D0003FA0A /* JavaScriptCore.framework */,
+				95F9FBF022CF401D0003FA0A /* Foundation.framework */,
+				95F9FBF222CF401D0003FA0A /* UIKit.framework */,
+				1FB28667B8CC096D9C9DF3C7 /* Pods_General.framework */,
+				2F10237DE98BD7029F95E811 /* Pods_GeneralDylib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95F9FBF422CF401D0003FA0A /* GeneralDylib */ = {
+			isa = PBXGroup;
+			children = (
+				95F9FC2D22CF401E0003FA0A /* GeneralDylib.h */,
+				95F9FC2F22CF401E0003FA0A /* GeneralDylib.m */,
+				95F9FC3922CF40E60003FA0A /* MertricManager.h */,
+				95F9FC3A22CF40E60003FA0A /* MertricManager.m */,
+				95F9FBF522CF401D0003FA0A /* Logos */,
+				95F9FBF922CF401D0003FA0A /* Config */,
+				95F9FC0622CF401D0003FA0A /* Trace */,
+				95F9FC1E22CF401D0003FA0A /* Tools */,
+				95F9FC2522CF401D0003FA0A /* AntiAntiDebug */,
+				95F9FC2822CF401D0003FA0A /* fishhook */,
+				95F9FC2322CF401D0003FA0A /* Supporting Files */,
+			);
+			path = GeneralDylib;
+			sourceTree = "<group>";
+		};
+		95F9FBF522CF401D0003FA0A /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				95F9FBF622CF401D0003FA0A /* GeneralDylib.xm */,
+				95F9FBF722CF401D0003FA0A /* GeneralDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		95F9FBF922CF401D0003FA0A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				95F9FBFA22CF401D0003FA0A /* MDConfigManager.h */,
+				95F9FBFC22CF401D0003FA0A /* MDConfigManager.m */,
+				95F9FBFE22CF401D0003FA0A /* MDCycriptManager.h */,
+				95F9FC0022CF401D0003FA0A /* MDCycriptManager.m */,
+				95F9FC0222CF401D0003FA0A /* MDMethodTrace.h */,
+				95F9FC0422CF401D0003FA0A /* MDMethodTrace.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		95F9FC0622CF401D0003FA0A /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				95F9FC0722CF401D0003FA0A /* a1a2-selectortramps-arm.s */,
+				95F9FC0922CF401D0003FA0A /* a1a2-selectortramps-arm64.s */,
+				95F9FC0B22CF401D0003FA0A /* a1a2-selectortramps-i386.s */,
+				95F9FC0D22CF401D0003FA0A /* a1a2-selectortramps-x86_64.s */,
+				95F9FC0F22CF401D0003FA0A /* a2a3-selectortramps-arm.s */,
+				95F9FC1122CF401D0003FA0A /* a2a3-selectortramps-i386.s */,
+				95F9FC1322CF401D0003FA0A /* a2a3-selectortramps-x86_64.s */,
+				95F9FC1522CF401D0003FA0A /* OCMethodTrace.h */,
+				95F9FC1722CF401D0003FA0A /* OCMethodTrace.m */,
+				95F9FC1922CF401D0003FA0A /* OCSelectorTrampolines.h */,
+				95F9FC1B22CF401D0003FA0A /* OCSelectorTrampolines.mm */,
+				95F9FC1D22CF401D0003FA0A /* selectortramps.mac */,
+			);
+			name = Trace;
+			sourceTree = "<group>";
+		};
+		95F9FC1E22CF401D0003FA0A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				95F9FC1F22CF401D0003FA0A /* LLDBTools.h */,
+				95F9FC2122CF401D0003FA0A /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		95F9FC2322CF401D0003FA0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95F9FC2422CF401D0003FA0A /* GeneralDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95F9FC2522CF401D0003FA0A /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				95F9FC2622CF401D0003FA0A /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		95F9FC2822CF401D0003FA0A /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				95F9FC2922CF401E0003FA0A /* fishhook.c */,
+				95F9FC2B22CF401E0003FA0A /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		95F9FBE722CF401D0003FA0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F9FBFF22CF401D0003FA0A /* MDCycriptManager.h in Headers */,
+				95F9FC0322CF401D0003FA0A /* MDMethodTrace.h in Headers */,
+				95F9FC2C22CF401E0003FA0A /* fishhook.h in Headers */,
+				95F9FC2022CF401D0003FA0A /* LLDBTools.h in Headers */,
+				95F9FBFB22CF401D0003FA0A /* MDConfigManager.h in Headers */,
+				95F9FC1A22CF401D0003FA0A /* OCSelectorTrampolines.h in Headers */,
+				95F9FC2E22CF401E0003FA0A /* GeneralDylib.h in Headers */,
+				95F9FC3B22CF40E60003FA0A /* MertricManager.h in Headers */,
+				95F9FC1622CF401D0003FA0A /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		95F9FBD722CF401D0003FA0A /* General */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F9FC3622CF401E0003FA0A /* Build configuration list for PBXNativeTarget "General" */;
+			buildPhases = (
+				DD654CAF3A2887863493F84F /* [CP] Check Pods Manifest.lock */,
+				95F9FBD122CF401D0003FA0A /* Sources */,
+				95F9FBD222CF401D0003FA0A /* Frameworks */,
+				95F9FBD322CF401D0003FA0A /* ShellScript */,
+				95F9FBD422CF401D0003FA0A /* Resources */,
+				95F9FBD522CF401D0003FA0A /* CopyFiles */,
+				95F9FBD622CF401D0003FA0A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95F9FBEC22CF401D0003FA0A /* PBXTargetDependency */,
+			);
+			name = General;
+			productName = General;
+			productReference = 95F9FBD822CF401D0003FA0A /* General.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95F9FBE822CF401D0003FA0A /* GeneralDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F9FC3322CF401E0003FA0A /* Build configuration list for PBXNativeTarget "GeneralDylib" */;
+			buildPhases = (
+				9F89CABD14EAACB3A2B4C01D /* [CP] Check Pods Manifest.lock */,
+				95F9FBE422CF401D0003FA0A /* ShellScript */,
+				95F9FBE522CF401D0003FA0A /* Sources */,
+				95F9FBE622CF401D0003FA0A /* Frameworks */,
+				95F9FBE722CF401D0003FA0A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeneralDylib;
+			productName = GeneralDylib;
+			productReference = 95F9FBE922CF401D0003FA0A /* libGeneralDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95F9FBCD22CF401D0003FA0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = david;
+				TargetAttributes = {
+					95F9FBD722CF401D0003FA0A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					95F9FBE822CF401D0003FA0A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 95F9FBD022CF401D0003FA0A /* Build configuration list for PBXProject "General" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95F9FBCC22CF401D0003FA0A;
+			productRefGroup = 95F9FBD922CF401D0003FA0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95F9FBD722CF401D0003FA0A /* General */,
+				95F9FBE822CF401D0003FA0A /* GeneralDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95F9FBD422CF401D0003FA0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F9FBE022CF401D0003FA0A /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95F9FBD322CF401D0003FA0A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh\n";
+		};
+		95F9FBD622CF401D0003FA0A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		95F9FBE422CF401D0003FA0A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		9F89CABD14EAACB3A2B4C01D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeneralDylib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD654CAF3A2887863493F84F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-General-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95F9FBD122CF401D0003FA0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95F9FBE522CF401D0003FA0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F9FC0122CF401D0003FA0A /* MDCycriptManager.m in Sources */,
+				95F9FC0A22CF401D0003FA0A /* a1a2-selectortramps-arm64.s in Sources */,
+				95F9FC3C22CF40E60003FA0A /* MertricManager.m in Sources */,
+				95F9FC0822CF401D0003FA0A /* a1a2-selectortramps-arm.s in Sources */,
+				95F9FC0E22CF401D0003FA0A /* a1a2-selectortramps-x86_64.s in Sources */,
+				95F9FC1822CF401D0003FA0A /* OCMethodTrace.m in Sources */,
+				95F9FBFD22CF401D0003FA0A /* MDConfigManager.m in Sources */,
+				95F9FC2A22CF401E0003FA0A /* fishhook.c in Sources */,
+				95F9FC2722CF401D0003FA0A /* AntiAntiDebug.m in Sources */,
+				95F9FC1C22CF401D0003FA0A /* OCSelectorTrampolines.mm in Sources */,
+				95F9FC0C22CF401D0003FA0A /* a1a2-selectortramps-i386.s in Sources */,
+				95F9FC3022CF401E0003FA0A /* GeneralDylib.m in Sources */,
+				95F9FC1222CF401D0003FA0A /* a2a3-selectortramps-i386.s in Sources */,
+				95F9FC1022CF401D0003FA0A /* a2a3-selectortramps-arm.s in Sources */,
+				95F9FBF822CF401D0003FA0A /* GeneralDylib.mm in Sources */,
+				95F9FC2222CF401D0003FA0A /* LLDBTools.mm in Sources */,
+				95F9FC1422CF401D0003FA0A /* a2a3-selectortramps-x86_64.s in Sources */,
+				95F9FC0522CF401D0003FA0A /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95F9FBEC22CF401D0003FA0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95F9FBE822CF401D0003FA0A /* GeneralDylib */;
+			targetProxy = 95F9FBEB22CF401D0003FA0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		95F9FC3122CF401E0003FA0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		95F9FC3222CF401E0003FA0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95F9FC3422CF401E0003FA0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 562C4723D867970736DAC302 /* Pods-GeneralDylib.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2PWBHWZ782;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeneralDylib/GeneralDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/General/Info.plist";
+				INSTALL_PATH = "@executable_path/Frameworks/libGeneralDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"GeneralDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_UIKITFORMAC = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		95F9FC3522CF401E0003FA0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B5DE4025B4EAF8A36D384A2 /* Pods-GeneralDylib.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 2PWBHWZ782;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeneralDylib/GeneralDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/General/Info.plist";
+				INSTALL_PATH = "@executable_path/Frameworks/libGeneralDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"GeneralDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_UIKITFORMAC = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		95F9FC3722CF401E0003FA0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6EE0089543C8AA583DAB163 /* Pods-General.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D9DQUVRKM;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = General/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.david.General;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		95F9FC3822CF401E0003FA0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C30B62FEB656DBEBB231A2 /* Pods-General.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D9DQUVRKM;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = General/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.david.General;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95F9FBD022CF401D0003FA0A /* Build configuration list for PBXProject "General" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F9FC3122CF401E0003FA0A /* Debug */,
+				95F9FC3222CF401E0003FA0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F9FC3322CF401E0003FA0A /* Build configuration list for PBXNativeTarget "GeneralDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F9FC3422CF401E0003FA0A /* Debug */,
+				95F9FC3522CF401E0003FA0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F9FC3622CF401E0003FA0A /* Build configuration list for PBXNativeTarget "General" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F9FC3722CF401E0003FA0A /* Debug */,
+				95F9FC3822CF401E0003FA0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95F9FBCD22CF401D0003FA0A /* Project object */;
+}
