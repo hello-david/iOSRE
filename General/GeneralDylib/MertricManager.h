@@ -15,9 +15,10 @@
 #import <MTHawkeye/MTHawkeyeUtility.h>
 
 NS_ASSUME_NONNULL_BEGIN
+#ifdef __IPHONE_13_0
 API_AVAILABLE(ios(13.0))
 @interface MertricManager: NSObject <MXMetricManagerSubscriber>
 @property (nonatomic, weak) MXMetricManager *metricManager;
 @end
-
+#endif
 NS_ASSUME_NONNULL_END

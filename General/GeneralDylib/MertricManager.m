@@ -5,6 +5,7 @@
 //  Created by David.Dai on 2019/7/5.
 //  Copyright © 2019 david. All rights reserved.
 //
+#ifdef __IPHONE_13_0
 
 #import "MertricManager.h"
 
@@ -47,3 +48,4 @@
     }
 }
 @end
+#endif

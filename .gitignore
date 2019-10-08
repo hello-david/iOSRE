@@ -6,6 +6,7 @@
 .vscode/
 
 /IPA
+/TargetApp
 
 ### Fastlane ###
 /fastlane/test_output/
