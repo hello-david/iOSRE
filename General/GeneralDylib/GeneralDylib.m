@@ -23,7 +23,7 @@ CHConstructor {
                                                       object:nil
                                                        queue:[NSOperationQueue mainQueue]
                                                   usingBlock:^(NSNotification * _Nonnull note) {
-//        [MTRunHawkeyeInOneLine start];
+        [MTRunHawkeyeInOneLine start];
     }];
 }
 
